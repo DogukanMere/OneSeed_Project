@@ -113,6 +113,7 @@ textarea {
     border-radius: .5rem;
     font-size: var(--font-mobile-small);
     cursor: pointer;
+    transition: all .3s ease ;
 }
 
 .form__right {
@@ -137,4 +138,13 @@ textarea {
     .form__right {
         display: inherit;
     }
+}
+
+.contact__submit:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.contact__submit:focus {
+    background-color: var(--color-focus);
 }

@@ -10,10 +10,12 @@ html
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer")
+    //- CSS FILES HERE 
     link(rel="stylesheet", href="/css/style.css")
     link(rel="stylesheet", href="/css/about.css")
     link(rel="stylesheet", href="/css/contact.css") 
   body 
+    //- HEADER
     header#header 
       nav#nav
         .nav__left  
@@ -26,41 +28,52 @@ html
             a(href="/about")  About 
           li.nav__item
             a(href="/contact")  Contact 
+        //- HAMBURER BUTTON ICON
         button.hamburger
           i.menuIcon.fa-solid.fa-bars
           i.closeIcon.fa-solid.fa-xmark
+      //- HAMBURGER LIST ITEMS
       ul.menu 
           li: a(href="/").menuItem HOME
           li: a(href="/about").menuItem ABOUT
           li: a(href="/contact").menuItem CONTACT    
+    //- MAIN CONTENT HERE
     main#main 
       block layout-content
+    //- EXTRAS SECTION CONTENT
     section#extras 
       .extras__background 
       .extras__items 
+        //- Process - Extra Item
         .extras__item 
           .item_top 
             a(href="/comingsoon").item_circle: i.fa-solid.fa-leaf.icons 
           .item_down 
             p Process 
             small Instruction
+        //- About Us - Extra Item
         .extras__item 
           .item_top 
             a(href="/about").item_circle: i.fa-solid.fa-circle-info.icons 
           .item_down 
             p About Us 
             small Who we are
+        //- Contact - Extra Item
         .extras__item 
           .item_top 
             a(href="/contact").item_circle: i.fa-solid.fa-circle-question.icons 
           .item_down 
             p Contact 
             small Connect
+    //- FOOTER
     footer#footer
       .footer__container 
+        //- Footer Social Media Links
         .footer__left 
           a(href="/"): i.fa-brands.fa-facebook-square
           a(href="/"): i.fa-brands.fa-twitter-square
           a(href="/"): i.fa-brands.fa-instagram-square
+        //- Copyright
         small &copy; 2022 OneSeed, All rights reserved
+    //- JAVASCRIPT HERE
     script(src="/js/script.js") 

@@ -1,19 +1,24 @@
 extends layout 
 
 block layout-content 
+  //- MAIN HERO
   section#hero
     .hero__background
       .hero__products 
         h3 Products
     .hero__container
+      //- Hero Text
       .hero__left
         h2 Growing up in
         h2 a loving environment 
         p Make your contribution with one seed
+      //- Hero Img
       .hero__right 
         .hero__img
+  //- PRODUCTS
   section#product
-    .product__container 
+    .product__container
+      //- Each Product 
       .product 
         .product__circle
           .circle
@@ -23,6 +28,7 @@ block layout-content
           p Sunflowers are usually tall annual or perennial plants
           figure Family: The Asteraceae
           a(href="/comingsoon").product__detail See details 
+      //- Each Product 
       .product 
         .product__circle
           .circle
@@ -32,6 +38,7 @@ block layout-content
           p Aster is a genus of perennial flowering plants in the family Asteraceae
           figure Family: The Asteraceae
           a(href="/comingsoon").product__detail See details 
+      //- Each Product 
       .product 
         .product__circle
           .circle
@@ -41,6 +48,7 @@ block layout-content
           p Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large prominent flowers.
           figure Family: The Liliaceae
           a(href="/comingsoon").product__detail See details 
+      //- Each Product 
       .product 
         .product__circle
           .circle
@@ -50,6 +58,7 @@ block layout-content
           p A rose is a woody perennial flowering plant of the genus Rosa.
           figure Family: The Rosaceae
           a(href="/comingsoon").product__detail See details 
+      //- See more Button 
       .button__more 
         a(href="/comingsoon").arrow__icon: i.fa-solid.fa-v     
         a(href="/comingsoon"): span See More 

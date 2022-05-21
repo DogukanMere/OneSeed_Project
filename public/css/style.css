@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* FONT POPPINS */
 
-*,*::after,*::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
+/* Variables - Main Settings*/
 :root {
     --color-primary: #386641;
     --color-secondary: #d8f3dc;
@@ -19,10 +15,14 @@
     --font-mobile-small: .8rem;
     --font-mobile-regular: 1rem;
     --font-mobile-large: 1.2rem;
-    --font-desktop-xsmall: 1.3rem;
-    --font-desktop-small: 1.6rem;
     --font-desktop-regular: 1.8rem;
     --font-desktop-large: 2rem;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -30,8 +30,6 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
-
-/* NAVIGATION BAR */
 
 h3, h6 {
     font-weight: 600;
@@ -46,6 +44,7 @@ a {
     text-decoration: none;
 }
 
+/* NAVIGATION BAR */
 #header {
     width: 100vw;
 }
@@ -59,8 +58,6 @@ a {
     max-width: 61.25rem;
     margin: auto;
     padding: .7rem 2rem;
-
-
     z-index: 4;
 }
 
@@ -81,7 +78,6 @@ a {
     list-style: none;
     display: inline;
     margin-left: 5rem;
-
 }
 
 .nav__item a{
@@ -141,7 +137,6 @@ i {
     list-style-type: none;
     color: var(--color-primary);
     font-weight: 600;
-
 }
 
 .closeIcon {
@@ -245,6 +240,7 @@ i {
 
 
 /* PRODUCTS */
+
 #product {
     width: 100vw;
     position: relative;
@@ -273,11 +269,10 @@ i {
     border-radius: 50%;
     border: 5px solid var(--color-primary);
     overflow: hidden;
-    /* background-color: skyblue; */
-
 }
 
-/* IMAGES */
+/* PRODUCTS IMAGES AND CONTENT */
+
 .img1, .img2, .img3, .img4 {
     width: 90px;
     height: 90px;
@@ -370,6 +365,8 @@ i {
 }
 
 /* EXTRAS */
+/* PROCESS-ABOUT US-CONTACT */
+
 .extras__items {
     display: flex;
     flex-direction: row;
@@ -418,6 +415,7 @@ i {
 }
 
 /* FOOTER */
+
 #footer {
     width: 100%;
     padding: .8rem 2rem;
@@ -450,7 +448,20 @@ i {
     color: var(--color-primary);
 }
 
+/* COMING SOON PAGE */
 
+.coming__container {
+    width: 100vw;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soon {
+    font-size: var(--font-desktop-large);
+    color: #386641;
+}
 
 /* MEDIA QUERIES */
 
@@ -537,21 +548,3 @@ i {
   .fa-brands:hover {
       color: var(--color-focus);
   }
-
-  /* COMING SOON PAGE */
-
-  .coming__container {
-      width: 100vw;
-      height: 15rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .soon {
-      font-size: var(--font-desktop-large);
-      color: #386641;
-  }
-
-
-
