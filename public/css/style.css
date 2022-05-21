@@ -486,6 +486,15 @@ i {
     }
   }
 
+  @media only screen and (max-width: 799px) {
+    .product__detail {
+        display: block;
+        position: static;
+        margin-top: .2rem;
+        transform: scale(.9);
+    }
+  }
+
   /* HOVER - FOCUS */
 
   .nav__item a:hover, .menuItem:hover, .product__content h6:hover{
