@@ -1,5 +1,5 @@
 OneSeed project is an imaginary website that I have used Node.js (pug, express), Vanilla Javascript,
-CSS3, HTML5
+CSS3
 
 --Image Sources--
 
