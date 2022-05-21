@@ -1,0 +1,40 @@
+extends layout 
+
+block layout-content 
+  section#about__hero
+    .hero__background
+      .hero__products 
+        h3 Contact
+    .hero__container
+      .hero__left
+        h2.about__h2 OneSeed
+        p Connect
+  section#contact
+    .contact__container
+      .confirm__message 
+        i.fa-solid.fa-circle-check
+        p Your message was sent successfully
+      .confirm__flex 
+        form(action="" method="get").contact__form
+          .form__item 
+            label(for="uname") Name
+            .form__input
+              i.fa-solid.fa-user
+              input(type="text" name="uname" id="uname" placeholder="Enter your name").input_item
+          .form__item 
+            label(for="email") Email
+            .form__input
+              i.fa-solid.fa-envelope
+              input(type="email" name="email" id="email" placeholder="example@email.com").input_item
+          .form__item 
+            label(for="phone") Phone
+            .form__input
+              i.fa-solid.fa-phone
+              input(type="number" name="phone" id="phone" placeholder="Enter your phone number").input_item
+          .form__item 
+            label(for="uname") Message
+            .form__input
+              textarea(id="message" name="message" rows="5" cols="15").input_item
+          button(type="submit" value="SEND").contact__submit.input_item SEND
+        .form__right 
+          .right__img

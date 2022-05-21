@@ -1,0 +1,140 @@
+/* CONTACT */
+
+.confirm__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__item {
+    margin: 1.5rem auto;
+}
+
+.form__input {
+    position: relative;
+}
+.form__item .fa-solid {
+    color: var(--color-primary);
+    font-size: var(--font-mobile-large);
+    position: absolute;
+    top: .5rem;
+    left: .6rem;
+}
+
+.form__input input, textarea{
+    padding: .5rem;
+    padding-left: 2.2rem;
+    border: 2px solid var(--color-primary);
+    border-radius: .6rem;
+}
+
+textarea {
+    width: 100%;
+    padding: .5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.form__input input:focus, textarea:focus {
+    border: 2px solid var(--color-optional);
+    outline: none;
+}
+
+.form__item label {
+    color: var(--color-content);
+    font-size: var(--font-mobile-small);
+}
+
+.not_clickable {
+    pointer-events: none;
+}
+
+.contact__container {
+    position: relative;
+}
+.confirm__message {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.confirm__message i {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.confirm__message p {
+    color: var(--color-primary);
+    font-size: var(--font-mobile-regular);
+}
+
+.contact__animation {
+    animation: contact .5s forwards ;
+}
+
+.contact__animation_show {
+    animation: contact_show .5s forwards .5s ;
+}
+
+@keyframes contact {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes contact_show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fa-circle-check {
+    color: var(--color-primary);
+    font-size: 5rem;
+}
+
+.contact__submit {
+    width: 13.5118rem;
+    border: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: .4rem 0;
+    border-radius: .5rem;
+    font-size: var(--font-mobile-small);
+    cursor: pointer;
+}
+
+.form__right {
+    display: none;
+    height: 25rem;
+    width: 15rem;
+    background-color: transparent;
+    margin-left: 9.5rem;
+}
+
+.right__img {
+    width: 150%;
+    height: 100%;
+    background-image: url("/img/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: .4rem solid var(--color-primary);
+}
+
+@media only screen and (min-width: 800px){
+    .form__right {
+        display: inherit;
+    }
+}

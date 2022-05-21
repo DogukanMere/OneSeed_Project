@@ -1,0 +1,66 @@
+doctype html 
+html 
+  head 
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1")
+    title #{title}
+    link(
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer")
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/about.css")
+    link(rel="stylesheet", href="/css/contact.css") 
+  body 
+    header#header 
+      nav#nav
+        .nav__left  
+          a(href="/"): i(class="fa-solid fa-seedling")
+          a(href="/"): h1.nav__company OneSeed
+        ul.nav__items 
+          li.nav__item 
+            a(href="/")  Home
+          li.nav__item
+            a(href="/about")  About 
+          li.nav__item
+            a(href="/contact")  Contact 
+        button.hamburger
+          i.menuIcon.fa-solid.fa-bars
+          i.closeIcon.fa-solid.fa-xmark
+      ul.menu 
+          li: a(href="/").menuItem HOME
+          li: a(href="/about").menuItem ABOUT
+          li: a(href="/contact").menuItem CONTACT    
+    main#main 
+      block layout-content
+    section#extras 
+      .extras__background 
+      .extras__items 
+        .extras__item 
+          .item_top 
+            a(href="/comingsoon").item_circle: i.fa-solid.fa-leaf.icons 
+          .item_down 
+            p Process 
+            small Instruction
+        .extras__item 
+          .item_top 
+            a(href="/about").item_circle: i.fa-solid.fa-circle-info.icons 
+          .item_down 
+            p About Us 
+            small Who we are
+        .extras__item 
+          .item_top 
+            a(href="/contact").item_circle: i.fa-solid.fa-circle-question.icons 
+          .item_down 
+            p Contact 
+            small Connect
+    footer#footer
+      .footer__container 
+        .footer__left 
+          a(href="/"): i.fa-brands.fa-facebook-square
+          a(href="/"): i.fa-brands.fa-twitter-square
+          a(href="/"): i.fa-brands.fa-instagram-square
+        small &copy; 2022 OneSeed, All rights reserved
+    script(src="/js/script.js") 

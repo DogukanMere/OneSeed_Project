@@ -1,0 +1,50 @@
+/* ABOUT */
+
+#about__hero {
+    width: 100vw;
+    max-height: 12rem;
+}
+
+.about__h2 {
+    font-size: 2.3rem;
+}
+
+#about__hero p{
+    font-size: var(--font-mobile-regular);
+}
+
+.about__container, .contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 3rem;
+}
+
+.about__circle {
+    width: 12rem;
+    height: 12rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    overflow: hidden;
+}
+
+.imgabout {
+    width: 13rem;
+    height: 13rem;
+    background-image: url("/img/about.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about__text {
+    color: var(--color-primary);
+    line-height: 2.2;
+    padding: 0 1.5rem;
+    text-align: center;
+    max-width: 40rem;
+    font-size: 0.9rem;
+}
