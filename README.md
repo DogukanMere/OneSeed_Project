@@ -1,13 +1,11 @@
 # OneSeed_Project
 
-OneSeed project is an imaginary website that I have used Node.js (pug, express), Vanilla Javascript,
+//OneSeed project is an imaginary website that I have used Node.js (pug, express), Vanilla Javascript,
 CSS3
---------------------
---------------------
---------------------
-//
-//
-//
+
+
+
+
 ///Image Sources///
 
 //Hero Image - Image taken from: https://www.pexels.com/photo/crop-woman-collecting-seedling-from-bush-5231141/
