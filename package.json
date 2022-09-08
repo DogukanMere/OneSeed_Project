@@ -2,10 +2,11 @@
   "name": "node_assignment_1",
   "version": "1.0.0",
   "description": "Node_Assignment_1_Dogukan_Mere",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon ./index.js",
-    "ui": "browser-sync start --config bs-config.js"
+    "ui": "browser-sync start --config bs-config.js",
+    "start": "node app.js"
   },
   "author": "Dogukan Mere",
   "license": "ISC",
