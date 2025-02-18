@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = 3000; //set up port 5000
+const port = 5000; //set up port 5000
 
 // Pug
 app.set('views', path.join(__dirname, 'views')); // set <app_directory>/views
