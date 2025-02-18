@@ -4,9 +4,9 @@
   "description": "Node_Assignment_1_Dogukan_Mere",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon ./index.js",
+    "dev": "nodemon app",
     "ui": "browser-sync start --config bs-config.js",
-    "start": "node app.js"
+    "start": "node app"
   },
   "author": "Dogukan Mere",
   "license": "ISC",
